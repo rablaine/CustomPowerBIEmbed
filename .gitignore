@@ -1,0 +1,7 @@
+node_modules/
+.env
+*.log
+.DS_Store
+xmla-proxy-dotnet/appsettings.json
+xmla-proxy-dotnet/bin/
+xmla-proxy-dotnet/obj/

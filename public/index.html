@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Data Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI-Powered Data Insights</h1>
+            <p class="subtitle">Ask questions about Contoso Retail sales data in natural language</p>
+        </header>
+
+        <main>
+            <div class="query-section">
+                <div class="input-group">
+                    <textarea 
+                        id="userQuery" 
+                        placeholder="Example: Show me top 10 products by revenue"
+                        rows="3"
+                    ></textarea>
+                    <button id="submitBtn" class="primary-btn">
+                        <span id="btnText">Generate Visualization</span>
+                        <span id="btnLoader" class="loader hidden"></span>
+                    </button>
+                </div>
+                
+                <div class="suggestions">
+                    <p>Try asking:</p>
+                    <div class="suggestion-chips">
+                        <span class="chip">Show me sales by region</span>
+                        <span class="chip">Top 10 products by revenue</span>
+                        <span class="chip">Monthly sales trend for 2024</span>
+                        <span class="chip">Sales by category</span>
+                        <span class="chip">Customer segment performance</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="statusMessage" class="status-message hidden"></div>
+
+            <div id="resultsSection" class="results-section hidden">
+                <div class="results-header">
+                    <h2 id="chartTitle">Results</h2>
+                    <div class="chart-controls">
+                        <button id="downloadBtn" class="secondary-btn">Download Data</button>
+                        <select id="chartType" class="chart-type-selector">
+                            <option value="bar">Bar Chart</option>
+                            <option value="line">Line Chart</option>
+                            <option value="pie">Pie Chart</option>
+                            <option value="doughnut">Doughnut Chart</option>
+                            <option value="radar">Radar Chart</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <canvas id="dataChart"></canvas>
+                </div>
+
+                <div class="data-details">
+                    <h3>Query Details</h3>
+                    <div id="queryDetails" class="details-content"></div>
+                    
+                    <h3>Data Preview</h3>
+                    <div id="dataPreview" class="table-container"></div>
+                    
+                    <h3>AI Prompts & Responses</h3>
+                    <div id="aiDebug" class="debug-content"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+{
+  "$customers": {
+    "columns": [
+      {
+        "ColumnName": "CustomerID",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "CustomerName",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "Segment",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "Region",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "City",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "State",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+        "DataType": 130
+      }
+    ]
+  },
+  "$date": {
+    "columns": [
+      {
+        "ColumnName": "Date",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "Year",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "Quarter",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "Month",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "MonthName",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "DayOfWeek",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+        "DataType": 130
+      }
+    ]
+  },
+  "$products": {
+    "columns": [
+      {
+        "ColumnName": "ProductID",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "ProductName",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "Category",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "Subcategory",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "UnitCost",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+        "DataType": 130
+      }
+    ]
+  },
+  "$sales": {
+    "columns": [
+      {
+        "ColumnName": "OrderID",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "OrderDate",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "ProductID",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "CustomerID",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "Quantity",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "UnitPrice",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "TotalAmount",
+        "DataType": 130
+      },
+      {
+        "ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+        "DataType": 130
+      }
+    ]
+  }
+}
